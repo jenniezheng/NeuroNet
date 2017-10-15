@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+.fa {
+  font-size: 3em;
+  color: white;
+}
+
+.nav-link {
+  padding: 0.3em;
+}
+
+#mynavbar {
+  color: white;
+  padding: 0.5em;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mytip {
+  margin-top: 1em;
+  padding: 0.5em;
+  font-size: 1.5em;
+  background-color: grey;
+}
+
+.chapterwrapper {
+  color: grey;
+  padding: 2em;
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+#credits h1 {
+  margin-top: 0.5em;
+}
+#credits h3 {
+  margin: 0.3em;
+}
