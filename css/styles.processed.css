@@ -1,4 +1,7 @@
-html, body {
+/*for vars*/
+
+html,
+body {
   height: 100%;
 }
 
@@ -12,28 +15,31 @@ body {
 }
 
 .nav-link {
-  padding: 0.3em;
+  padding: .3em;
 }
 
 #mynavbar {
   color: white;
-  padding: 0.5em;
+  padding: .5em;
   background-color: grey;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .mytip {
   margin-top: 1em;
-  padding: 0.5em;
+  padding: .5em;
   font-size: 1.5em;
   background-color: grey;
 }
 
 .chapterwrapper {
   color: grey;
-  padding: 2em;
+  padding: 3em;
   text-align: center;
 }
 
@@ -42,8 +48,9 @@ body {
 }
 
 #credits h1 {
-  margin-top: 0.5em;
+  margin-top: .5em;
 }
+
 #credits h3 {
-  margin: 0.3em;
+  margin: .3em;
 }
