@@ -1,4 +1,6 @@
 # NeuroNet
+Organization
+* sandbox_demos -- contains examples for sandbox
 
 ### Modifying Code
 Simplest method is Codepen.
@@ -8,11 +10,11 @@ Simplest method is Codepen.
 2. Go to https://codepen.io/jbunie/project/editor/XgbjqJ
 3. Fork the project. 
 4. Add files, edit lines, view changes. 
-5. When done, export the codepen project into a zip. 
+5. When done, export the Codepen project into a zip. 
 6. Extract files from zip into local git directory, pull from git repo, merge, fix merge changes, and push. 
 
 Another method is Cloud9.
 - Pros: Completely free linux workspace on the cloud. No maximum file count. 
 - Cons: Compiler, debugger, and livereload must be manually set up. No gulp file created yet. 
 
-Last method is own PC. For linux and Mac users.
+Last method is own PC. For Linux and Mac users.
