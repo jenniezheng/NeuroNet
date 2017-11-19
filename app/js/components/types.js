@@ -3,17 +3,20 @@ import React, { Component } from 'react';
 
 class Types extends Component {
     //TODO
-    //if possible, convert to slides
-    //Brief description of each type with explanation
+    //For each type...
+    //1. Brief description of structure
+    //2. Brief description of applications
+    //3. Image
    render() {
-    //note images are stored in dist folder
+    //Notes...
     //nice resource: http://www.asimovinstitute.org/neural-network-zoo/
-    //images can be viewed after running webpack, but not with yarn start
+    //images are stored in /dist/images folder
+    //webpack server not yet configured to load images
     return (
      <div>
         <div>
 
-            <img height="50%" width="50%" src='images/feedforward.png'></img>
+            <img height="50%" width="50%" src='/images/feedforward.png'></img>
             <h3> Feed Forward Network </h3>
             <p>Explanation</p>
           </div>

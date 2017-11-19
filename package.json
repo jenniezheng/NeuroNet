@@ -31,6 +31,7 @@
     "node-sass-loader": "^0.1.7",
     "pure-react-carousel": "^1.9.9",
     "react": "^15.6.2",
+    "react-bootstrap": "^0.31.5",
     "react-dom": "^15.6.2",
     "react-responsive-carousel": "^3.1.28",
     "react-transition-group": "^2.2.1",

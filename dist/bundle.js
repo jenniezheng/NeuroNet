@@ -45,7 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	module.exports = __webpack_require__(215);
+	module.exports = __webpack_require__(216);
 
 
 /***/ },
@@ -102,7 +102,11 @@
 
 	var _activation2 = _interopRequireDefault(_activation);
 
-	var _types = __webpack_require__(214);
+	var _activationGraphical = __webpack_require__(214);
+
+	var _activationGraphical2 = _interopRequireDefault(_activationGraphical);
+
+	var _types = __webpack_require__(215);
 
 	var _types2 = _interopRequireDefault(_types);
 
@@ -189,7 +193,7 @@
 	          main = _react2.default.createElement(_machinelearning2.default, null);
 	          break;
 	        case 'Activation Functions':
-	          main = _react2.default.createElement(_activation2.default, null);
+	          main = _react2.default.createElement('div', null, _react2.default.createElement(_activation2.default, null), _react2.default.createElement(_activationGraphical2.default, null));
 	          break;
 	        case 'Types':
 	          main = _react2.default.createElement(_types2.default, null);
@@ -30539,7 +30543,11 @@
 	  _createClass(MachineLearning, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', null, 'Machine learning TODO');
+	      return (
+	        //TODO...
+	        //HTML and CSS explanation about machine learning
+	        _react2.default.createElement('div', null, 'Machine learning TODO')
+	      );
 	    }
 	  }]);
 
@@ -30596,26 +30604,26 @@
 	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
 
-	var Intro = function (_React$Component) {
-	  _inherits(Intro, _React$Component);
+	var Software2p0 = function (_React$Component) {
+	  _inherits(Software2p0, _React$Component);
 
-	  function Intro() {
-	    _classCallCheck(this, Intro);
+	  function Software2p0() {
+	    _classCallCheck(this, Software2p0);
 
-	    return _possibleConstructorReturn(this, (Intro.__proto__ || Object.getPrototypeOf(Intro)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (Software2p0.__proto__ || Object.getPrototypeOf(Software2p0)).apply(this, arguments));
 	  }
 
-	  _createClass(Intro, [{
+	  _createClass(Software2p0, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement('div', null, _react2.default.createElement('div', null, "A neural network is a collection of computer programmed \u201Cneurons\u201D that work together to produce a result. Neural networks represent a new programming paradigm, coined Software 2.0 by AI researcher Andrej Karpathy.", _react2.default.createElement('br', null), "Traditional programming \u201CSoftware 1.0\u201D involves a programmer writing a program to try to reach a result. Meanwhile, \u201CSoftware 2.0\u201D involes a programmer letting the program design itself to reach a result."), _react2.default.createElement('div', null, '... TO DO'), _react2.default.createElement('div', null, 'Software 1.0 programs consist of explicit instructions written in computer code by a programmer that do not react to their accuracy of producing a desirable result. Meanwhile Software 2.0 programs consist of neural networks that are programmed to constantly change their programming to increase their accuracy of producing a desirable result.'));
 	    }
 	  }]);
 
-	  return Intro;
+	  return Software2p0;
 	}(_react2.default.Component);
 
-	exports.default = Intro;
+	exports.default = Software2p0;
 
 /***/ },
 /* 212 */
@@ -30734,29 +30742,114 @@
 	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
 
-	var MachineLearning = function (_React$Component) {
-	  _inherits(MachineLearning, _React$Component);
+	var Activation = function (_React$Component) {
+	  _inherits(Activation, _React$Component);
 
-	  function MachineLearning() {
-	    _classCallCheck(this, MachineLearning);
+	  function Activation() {
+	    _classCallCheck(this, Activation);
 
-	    return _possibleConstructorReturn(this, (MachineLearning.__proto__ || Object.getPrototypeOf(MachineLearning)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (Activation.__proto__ || Object.getPrototypeOf(Activation)).apply(this, arguments));
 	  }
 
-	  _createClass(MachineLearning, [{
+	  _createClass(Activation, [{
 	    key: 'render',
+
+	    //TODO
+	    //Constant X1 and X2 inputs set to whatever, like .8 and -.3
+	    //Small interactive form with togglable weight1, weight2, and bias
+	    //Dropdown with pickable activiations including tanh, sigmoid, and relu
+	    //Result displayed: example, .32
+	    //Function displayed: Example:
+	    //Z=Weight1*X1+Weight2*X2+bias.
+	    //A=f(Z)=1/(1+e^(-z)) for sigmoid
 	    value: function render() {
-	      return _react2.default.createElement('div', null, 'Activation TODO');
+	      return _react2.default.createElement('div', null, 'Activation');
 	    }
 	  }]);
 
-	  return MachineLearning;
+	  return Activation;
 	}(_react2.default.Component);
 
-	exports.default = MachineLearning;
+	exports.default = Activation;
 
 /***/ },
 /* 214 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+	    }
+	  }return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+	  };
+	}();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	var ActivationGraphical = function (_React$Component) {
+	  _inherits(ActivationGraphical, _React$Component);
+
+	  function ActivationGraphical() {
+	    _classCallCheck(this, ActivationGraphical);
+
+	    return _possibleConstructorReturn(this, (ActivationGraphical.__proto__ || Object.getPrototypeOf(ActivationGraphical)).apply(this, arguments));
+	  }
+
+	  _createClass(ActivationGraphical, [{
+	    key: 'render',
+
+	    //TODO
+	    //Multiple X and Y inputs (dots on a graph) with labels (yes or no)
+	    //Small interactive form with togglable weight1, weight2, and bias
+	    //No activation function
+	    //Result displayed on graph as line with <0  red, >0 blue, or some other combination of colors
+	    //Error displayed as # labels on wrong side
+	    value: function render() {
+	      return _react2.default.createElement('div', null, 'Activation Graphical');
+	    }
+	  }]);
+
+	  return ActivationGraphical;
+	}(_react2.default.Component);
+
+	exports.default = ActivationGraphical;
+
+/***/ },
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30815,12 +30908,17 @@
 	   _createClass(Types, [{
 	      key: "render",
 
-	      //if possible, convert to slides
-	      //Brief description of each type with explanation
+	      //TODO
+	      //For each type...
+	      //1. Brief description of structure
+	      //2. Brief description of applications
+	      //3. Image
 	      value: function render() {
-	         //note images are stored in dist folder
+	         //Notes...
 	         //nice resource: http://www.asimovinstitute.org/neural-network-zoo/
-	         return _react2.default.createElement("div", null, _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Feed Forward Network "), _react2.default.createElement("img", { height: "50%", width: "50%", src: "images/feedforward.png" })), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Convolutional Network")), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Recurrent Neural Network")), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Autoencoders ")));
+	         //images are stored in /dist/images folder
+	         //webpack server not yet configured to load images
+	         return _react2.default.createElement("div", null, _react2.default.createElement("div", null, _react2.default.createElement("img", { height: "50%", width: "50%", src: "/images/feedforward.png" }), _react2.default.createElement("h3", null, " Feed Forward Network "), _react2.default.createElement("p", null, "Explanation")), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Convolutional Network")), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Recurrent Neural Network")), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Autoencoders ")));
 	      }
 	   }]);
 
@@ -30830,13 +30928,13 @@
 	exports.default = Types;
 
 /***/ },
-/* 215 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(216);
+	var content = __webpack_require__(217);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -30844,7 +30942,7 @@
 	var options = {"hmr":true}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(218)(content, options);
+	var update = __webpack_require__(219)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -30861,10 +30959,10 @@
 	}
 
 /***/ },
-/* 216 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(217)(undefined);
+	exports = module.exports = __webpack_require__(218)(undefined);
 	// imports
 
 
@@ -30875,7 +30973,7 @@
 
 
 /***/ },
-/* 217 */
+/* 218 */
 /***/ function(module, exports) {
 
 	/*
@@ -30957,7 +31055,7 @@
 
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -31013,7 +31111,7 @@
 	var	singletonCounter = 0;
 	var	stylesInsertedAtTop = [];
 
-	var	fixUrls = __webpack_require__(219);
+	var	fixUrls = __webpack_require__(220);
 
 	module.exports = function(list, options) {
 		if (false) {
@@ -31329,7 +31427,7 @@
 
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports) {
 
 	

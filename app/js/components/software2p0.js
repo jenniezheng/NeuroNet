@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default class Intro extends React.Component {
+export default class Software2p0 extends React.Component {
   render() {
     return (
         <div>

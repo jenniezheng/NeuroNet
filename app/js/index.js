@@ -7,6 +7,7 @@ import MachineLearning from './components/machinelearning';
 import Intro from './components/software2p0';
 import Regularization from './components/regularization';
 import Activation from './components/activation';
+import ActivationGraphical from './components/activationGraphical';
 import Types from './components/types';
 
 class ChapterWrapper extends React.Component {
@@ -50,7 +51,7 @@ class Application extends React.Component {
         main=<MachineLearning/>
         break
     case 'Activation Functions':
-        main=<Activation/>
+        main=<div><Activation/><ActivationGraphical/></div>
         break
     case 'Types':
         main=<Types/>
