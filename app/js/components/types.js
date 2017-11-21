@@ -11,12 +11,11 @@ class Types extends Component {
     //Notes...
     //nice resource: http://www.asimovinstitute.org/neural-network-zoo/
     //images are stored in /dist/images folder
-    //webpack server not yet configured to load images
     return (
      <div>
         <div>
 
-            <img height="50%" width="50%" src='/images/feedforward.png'></img>
+            <img height="50%" width="50%" src='../images/feedforward.png'></img>
             <h3> Feed Forward Network </h3>
             <p>Explanation</p>
           </div>

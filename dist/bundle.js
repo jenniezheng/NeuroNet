@@ -30835,8 +30835,9 @@
 	    //TODO
 	    //Multiple X and Y inputs (dots on a graph) with labels (yes or no)
 	    //Small interactive form with togglable weight1, weight2, and bias
-	    //No activation function
-	    //Result displayed on graph as line with <0  red, >0 blue, or some other combination of colors
+	    //No activation function, just Res=weight1*X+weight2*Y+bias
+	    //Result displayed on graph as line with Res<0  red, Res>0 blue,
+	    //or some other combination of colors
 	    //Error displayed as # labels on wrong side
 	    value: function render() {
 	      return _react2.default.createElement('div', null, 'Activation Graphical');
@@ -30917,8 +30918,7 @@
 	         //Notes...
 	         //nice resource: http://www.asimovinstitute.org/neural-network-zoo/
 	         //images are stored in /dist/images folder
-	         //webpack server not yet configured to load images
-	         return _react2.default.createElement("div", null, _react2.default.createElement("div", null, _react2.default.createElement("img", { height: "50%", width: "50%", src: "/images/feedforward.png" }), _react2.default.createElement("h3", null, " Feed Forward Network "), _react2.default.createElement("p", null, "Explanation")), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Convolutional Network")), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Recurrent Neural Network")), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Autoencoders ")));
+	         return _react2.default.createElement("div", null, _react2.default.createElement("div", null, _react2.default.createElement("img", { height: "50%", width: "50%", src: "../images/feedforward.png" }), _react2.default.createElement("h3", null, " Feed Forward Network "), _react2.default.createElement("p", null, "Explanation")), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Convolutional Network")), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Recurrent Neural Network")), _react2.default.createElement("div", null, _react2.default.createElement("h3", null, " Autoencoders ")));
 	      }
 	   }]);
 
@@ -30942,7 +30942,7 @@
 	var options = {"hmr":true}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(219)(content, options);
+	var update = __webpack_require__(220)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -30967,7 +30967,7 @@
 
 
 	// module
-	exports.push([module.id, "/*for vars*/\nhtml, body {\n  height: 100%; }\n\nbody {\n  background: #fff; }\n\n.fa {\n  font-size: 2.2em;\n  color: white; }\n\n.fa-github-alt {\n  padding-left: 3em; }\n\n.nav-link {\n  padding: .3em; }\n\n#mynavbar {\n  color: white;\n  padding: .5em;\n  background-color: grey;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.mytip {\n  margin-top: .3em;\n  outline: 1px solid white;\n  padding: .4em;\n  font-size: 1.5em;\n  background-color: #00AAFF; }\n\n.chapterwrapper {\n  color: grey;\n  padding: 3em;\n  text-align: center; }\n\n.left {\n  text-align: left; }\n\n#credits h1 {\n  margin-top: .5em; }\n\n#credits h3 {\n  margin: .3em; }\n", ""]);
+	exports.push([module.id, "/*for vars*/\nhtml, body {\n  height: 100%; }\n\nbody {\n  background: #fff;\n  background-image: url(" + __webpack_require__(219) + ");\n  background-size: 100% 100%; }\n\n.fa {\n  font-size: 2.2em;\n  color: white; }\n\n.fa-github-alt {\n  padding-left: 3em; }\n\n.nav-link {\n  padding: .3em; }\n\n#mynavbar {\n  color: white;\n  padding: .5em;\n  background-color: grey;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.mytip {\n  margin-top: .3em;\n  outline: 1px solid white;\n  padding: .4em;\n  font-size: 1.5em;\n  background-color: #00AAFF; }\n\n.chapterwrapper {\n  color: grey;\n  padding: 3em;\n  text-align: center; }\n\n.left {\n  text-align: left; }\n\n#credits h1 {\n  margin-top: .5em; }\n\n#credits h3 {\n  margin: .3em; }\n", ""]);
 
 	// exports
 
@@ -31058,6 +31058,12 @@
 /* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__.p + "852efb8a7be2a14d7a2e0125fe5629fe.png";
+
+/***/ },
+/* 220 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/*
 		MIT License http://www.opensource.org/licenses/mit-license.php
 		Author Tobias Koppers @sokra
@@ -31111,7 +31117,7 @@
 	var	singletonCounter = 0;
 	var	stylesInsertedAtTop = [];
 
-	var	fixUrls = __webpack_require__(220);
+	var	fixUrls = __webpack_require__(221);
 
 	module.exports = function(list, options) {
 		if (false) {
@@ -31427,7 +31433,7 @@
 
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports) {
 
 	
