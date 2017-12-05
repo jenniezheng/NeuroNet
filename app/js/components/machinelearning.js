@@ -3,9 +3,12 @@ import React from 'react';
 export default class MachineLearning extends React.Component {
   render() {
     return (
+
         //TODO...
         //HTML and CSS explanation about machine learning
         <div>
+             <h1> Machine Learning</h1>
+
           <h1> Supervised Machine Learning</h1>
 <p>
 Most of the machine learning applications are implemented through supervised machine learning applications.
