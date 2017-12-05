@@ -5,7 +5,7 @@ import {Next, Prev} from './slides'
 class Typen1 extends Component {
    render() {
     return (
-     <div className='type'>
+     <div className='type firstType'>
         <Next name='Types0'/>
         <center>
         <h3> A basic neural network has three sections </h3>
