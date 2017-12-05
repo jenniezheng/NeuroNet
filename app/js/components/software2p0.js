@@ -17,13 +17,13 @@ class Intro0 extends React.Component {
           </div>
     <Container className='software2p0_caption'>
         <Row>
-          <Col md="6"> <div>
+          <Col lg="6"> <div>
                     <h4>TRADITIONAL PROGRAMMING</h4>
-                    <img src='../../images/software2p01.svg'></img>
+                    <img src='/images/software2p01.svg'></img>
           </div> </Col>
-          <Col md="6"> <div>
+          <Col lg="6"> <div>
                     <h4>NEURAL NETWORK</h4>
-                     <img src='../../images/software2p02.svg'></img>
+                     <img src='/images/software2p02.svg'></img>
           </div> </Col>
         </Row>
       </Container>
@@ -44,27 +44,30 @@ class Intro1 extends React.Component {
          Software 1.0 programs consist of explicit instructions written in computer code by a programmer that do not react to their accuracy of producing a desirable result.
              </p>
            <p>
-         Meanwhile Software 2.0 programs consist of neural networks that are programmed to constantly change their programming to increase their accuracy of producing a desirable result.
+         Meanwhile Software 2.0 programs consist of neural networks that are programmed to constantly <span className='font-weight-bold'>change their programming </span> to increase their accuracy of producing a desirable result.
           </p>
           </div>
 
             <Container className='software2p0_caption'>
         <Row>
-          <Col md="6"> <div>
+          <Col lg="6"> <div>
                     <h4>TRADITIONAL PROGRAMMING</h4>
-                    <img src='../../images/software2p03.svg'></img>
+                    <img src='/images/software2p03.svg'></img>
           </div> </Col>
-          <Col md="6"> <div>
+          <Col lg="6"> <div>
                     <h4>NEURAL NETWORK</h4>
-                     <img src='../../images/software2p04.svg'></img>
+                     <img src='/images/software2p04.svg'></img>
+
           </div> </Col>
-          <Col md="6"> <div>
+          </Row>
+          <Row>
+          <Col lg="6"> <div>
                     <h4>accuracy of program:</h4>
-                    <img src='../../images/software2p05.svg'></img>
+                    <img src='/images/software2p05.svg'></img>
           </div> </Col>
-          <Col md="6"> <div>
+          <Col lg="6"> <div>
                     <h4>accuracy of program:</h4>
-                     <img src='../../images/software2p06.svg'></img>
+                     <img src='/images/software2p06.svg'></img>
           </div> </Col>
         </Row>
       </Container>

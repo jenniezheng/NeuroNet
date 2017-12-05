@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Sandbox from './components/sandbox';
-import Credits from './components/credits';
 import MyNavBar from './components/navbar';
-import MachineLearning from './components/machinelearning';
+import {MachineLearning0, MachineLearning1,MachineLearning2}  from './components/machinelearning';
+import {Regularization0, Regularization1,Regularization2}  from './components/regularization';
+import {Type0, Type1,Type2,Type3,Typen1}  from './components/types';
 import {Intro0, Intro1} from './components/software2p0';
-import Regularization from './components/regularization';
-import Activation from './components/activation';
-import Conclusion from './components/conclusion';
-import ActivationGraphical from './components/activationGraphical';
-import Types from './components/types';
+import Conclusion from './components/conclusion'
 import {Link, Switch, Route, HashRouter as Router } from 'react-router-dom'
 
 class ChapterWrapper extends React.Component {
@@ -26,16 +22,21 @@ class Application extends React.Component {
  render(){
     return <Switch>
       <Route exact path='/' render={() =>  <ChapterWrapper><Intro0/></ChapterWrapper> }/>
-      <Route path='/Credits' render={() =>  <ChapterWrapper><Credits/></ChapterWrapper> }/>
-      <Route path='/Sandbox' render={() => <ChapterWrapper><Sandbox/></ChapterWrapper> }/>
-      <Route path='/Regularization' render={() => <ChapterWrapper><Regularization/></ChapterWrapper> }/>
-      <Route path='/MachineLearning' render={() => <ChapterWrapper><MachineLearning/></ChapterWrapper> }/>
-      <Route path='/Types' render={() => <ChapterWrapper><Types/></ChapterWrapper> }/>
+      <Route path='/Regularization' render={() => <ChapterWrapper><Regularization0/></ChapterWrapper> }/>
+      <Route path='/Regularization1' render={() => <ChapterWrapper><Regularization1/></ChapterWrapper> }/>
+      <Route path='/Regularization2' render={() => <ChapterWrapper><Regularization2/></ChapterWrapper> }/>
+      <Route path='/MachineLearning' render={() => <ChapterWrapper><MachineLearning0/></ChapterWrapper> }/>
+      <Route path='/MachineLearning1' render={() => <ChapterWrapper><MachineLearning1/></ChapterWrapper> }/>
+      <Route path='/MachineLearning2' render={() => <ChapterWrapper><MachineLearning2/></ChapterWrapper> }/>
+      <Route path='/Types' render={() => <ChapterWrapper><Typen1/></ChapterWrapper> }/>
+      <Route path='/Types0' render={() => <ChapterWrapper><Type0/></ChapterWrapper> }/>
+      <Route path='/Types1' render={() => <ChapterWrapper><Type1/></ChapterWrapper> }/>
+      <Route path='/Types2' render={() => <ChapterWrapper><Type2/></ChapterWrapper> }/>
+      <Route path='/Types3' render={() => <ChapterWrapper><Type3/></ChapterWrapper> }/>
       <Route path='/Intro' render={() => <ChapterWrapper><Intro0/></ChapterWrapper> }/>
       <Route path='/Intro1' render={() => <ChapterWrapper><Intro1/></ChapterWrapper> }/>
-      <Route path='/Activation' render={() => <ChapterWrapper><Activation/><ActivationGraphical/></ChapterWrapper> }/>
       <Route path='/Conclusion' render={() => <ChapterWrapper><Conclusion/></ChapterWrapper> }/>
-    </Switch>
+       </Switch>
   }
 }
 

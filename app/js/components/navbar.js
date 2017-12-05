@@ -27,11 +27,13 @@ pick icons for each chapter
 reword each chapter
 */
 const ch_intro=new Chapter({
-  name:'Intro'
+  name:'Intro',
+  desc:'Introduction'
 })
 
 const ch_machinglearning=new Chapter({
-  name:'MachineLearning'
+  name:'MachineLearning',
+  desc:'Machine Learning'
 })
 
 const ch_activation=new Chapter({
@@ -44,14 +46,13 @@ const ch_regularization=new Chapter({
 })
 
 const ch_types=new Chapter({
-  name:'Types'
+  name:'Types',
+  desc:'Neural Network Architectures'
 })
-
 
 const ch_sandbox=new Chapter({
   name:'Sandbox'
 })
-
 
 const ch_conclusion=new Chapter({
   name:'Conclusion'
@@ -61,7 +62,7 @@ const ch_credits=new Chapter({
   name:'Credits'
 })
 
-const chapters=[ch_intro,ch_machinglearning,ch_activation,ch_regularization,ch_types,ch_sandbox,ch_conclusion,ch_credits]
+const chapters=[ch_intro,ch_machinglearning,ch_types,ch_regularization,ch_conclusion]
 
 class NavDescription extends React.Component {
   constructor(props) {
