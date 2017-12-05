@@ -8,7 +8,7 @@ class MachineLearning0 extends React.Component {
         <Next name='MachineLearning1'/>
              <h1> Machine Learning</h1>
              <p>The alternative name for software2.0 is machine learning.
-             The term refers to how the machine seems to incrementably improve by learning.
+             The term refers to how the machine seems to incrementally improve by learning.
              There's two types of machine learning, supervised and unsupervised.</p>
             </div>
             )
@@ -39,11 +39,11 @@ This type of machine learning is called supervised, because the machine is given
 <h3 className="text-center"> Y = f(X)</h3>
 </p>
 <h3>
-Two categories of Supervised Learning:
+Two types of Supervised Learning:
 </h3>
 <ol>
 <li>
-    Categorized – When the output variable is a category like "cat" or "not cat", "happy" or "sad".
+    Classification – When the output variable is a category like "cat" or "not cat", "happy" or "sad".
 </li>
 <li>
     Regression – When the output is a real value like "cost" or "weight".
