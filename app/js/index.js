@@ -4,67 +4,41 @@ import Sandbox from './components/sandbox';
 import Credits from './components/credits';
 import MyNavBar from './components/navbar';
 import MachineLearning from './components/machinelearning';
-import Intro from './components/software2p0';
+import {Intro0, Intro1, Intro2} from './components/software2p0';
 import Regularization from './components/regularization';
 import Activation from './components/activation';
+import Conclusion from './components/conclusion';
 import ActivationGraphical from './components/activationGraphical';
 import Types from './components/types';
+import {Link, Switch, Route, HashRouter as Router } from 'react-router-dom'
 
 class ChapterWrapper extends React.Component {
   render(){
     return (
+        <div><MyNavBar />
       <div className='chapterwrapper'>{this.props.children}</div>
+        </div>
     )
   }
 }
 
 class Application extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      chapter: 'Credits'
-    }
-  }
-
-  changeChapter(chapter) {
-    this.setState({
-      chapter: chapter
-    })
-  }
-
  render(){
-    let main=<div></div>
-   switch(this.state.chapter){
-    case 'Credits':
-        main=<Credits/>
-        break
-     case 'Sandbox':
-        main=<Sandbox/>
-        break
-    case 'Intro':
-        main=<Intro/>
-        break
-    case 'Regularization':
-        main=<Regularization/>
-        break
-    case 'Machine Learning':
-        main=<MachineLearning/>
-        break
-    case 'Activation Functions':
-        main=<div><Activation/><ActivationGraphical/></div>
-        break
-    case 'Types':
-        main=<Types/>
-        break
-    default:
-        main=<div><h1>TODO: {this.state.chapter}</h1></div>
+    return <Switch>
+      <Route exact path='/' render={() =>  <ChapterWrapper><Intro/></ChapterWrapper> }/>
+      <Route path='/Credits' render={() =>  <ChapterWrapper><Credits/></ChapterWrapper> }/>
+      <Route path='/Sandbox' render={() => <ChapterWrapper><Sandbox/></ChapterWrapper> }/>
+      <Route path='/Regularization' render={() => <ChapterWrapper><Regularization/></ChapterWrapper> }/>
+      <Route path='/MachineLearning' render={() => <ChapterWrapper><MachineLearning/></ChapterWrapper> }/>
+      <Route path='/Types' render={() => <ChapterWrapper><Types/></ChapterWrapper> }/>
+      <Route path='/Intro' render={() => <ChapterWrapper><Intro0/></ChapterWrapper> }/>
+      <Route path='/Intro1' render={() => <ChapterWrapper><Intro1/></ChapterWrapper> }/>
+      <Route path='/Intro2' render={() => <ChapterWrapper><Intro2/></ChapterWrapper> }/>
+      <Route path='/Activation' render={() => <ChapterWrapper><Activation/><ActivationGraphical/></ChapterWrapper> }/>
+      <Route path='/Conclusion' render={() => <ChapterWrapper><Conclusion/></ChapterWrapper> }/>
+    </Switch>
   }
-
-    return <div><MyNavBar cb={this.changeChapter.bind(this)}/>
-      <ChapterWrapper>{main}</ChapterWrapper>
-    </div>
- }
 }
 
 
-ReactDOM.render(<Application />, document.getElementById('root'));
+ReactDOM.render(<Router><Application /></Router>, document.getElementById('root'));

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import {
   Tooltip,
@@ -30,11 +31,11 @@ const ch_intro=new Chapter({
 })
 
 const ch_machinglearning=new Chapter({
-  name:'Machine Learning'
+  name:'MachineLearning'
 })
 
 const ch_activation=new Chapter({
-  name:'Activation Functions'
+  name:'ActivationFunctions'
 })
 
 
@@ -62,11 +63,9 @@ const ch_credits=new Chapter({
 
 const chapters=[ch_intro,ch_machinglearning,ch_activation,ch_regularization,ch_types,ch_sandbox,ch_conclusion,ch_credits]
 
-
 class NavDescription extends React.Component {
   constructor(props) {
     super(props);
-
     this.toggle = this.toggle.bind(this);
     this.state = {
       tooltipOpen: false
@@ -79,14 +78,10 @@ class NavDescription extends React.Component {
     });
   }
 
-  changeChapter(name){
-    this.props.cb(this.props.name)
-  }
-
   render() {
     return (
       <div>
-      <i onClick={this.changeChapter.bind(this)} className={'fa  '+this.props.icon} aria-hidden="true" id={'nav'+this.props.index}></i>
+      <i  className={'fa  '+this.props.icon} aria-hidden="true" id={'nav'+this.props.index}></i>
         <Tooltip placement="down" isOpen={this.state.tooltipOpen} target={'nav'+this.props.index} toggle={this.toggle} className='mytip'>
           {this.props.desc}
         </Tooltip>
@@ -96,24 +91,21 @@ class NavDescription extends React.Component {
 }
 
 export default class MyNavBar extends React.Component {
-  changeChapter(num){
-    this.props.cb(num);
-  }
 
   render() {
-    let cb=this.changeChapter.bind(this)
     return (
       <div id='mynavbar'>
         <div><h2>NEURONET</h2></div>
       <Nav id='chapters'>
         { chapters.map(function(chapter, index){
             return <NavItem >
-          <NavLink href="#" > <NavDescription index={index}
+            <NavLink>
+          <Link to={'/'+chapter.name} > <NavDescription index={index}
                                desc={chapter.desc}
                                 name={chapter.name}
                                 icon={chapter.icon}
-                                key={index}
-                                cb={cb} />
+                                key={index}/>
+              </Link>
               </NavLink>
               </NavItem>
           }) }
