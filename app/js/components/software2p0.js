@@ -19,11 +19,11 @@ class Intro0 extends React.Component {
         <Row>
           <Col lg="6"> <div>
                     <h4>TRADITIONAL PROGRAMMING</h4>
-                    <img src='/images/software2p01.svg'></img>
+                    <img src='./images/software2p01.svg'></img>
           </div> </Col>
           <Col lg="6"> <div>
                     <h4>NEURAL NETWORK</h4>
-                     <img src='/images/software2p02.svg'></img>
+                     <img src='./images/software2p02.svg'></img>
           </div> </Col>
         </Row>
       </Container>
@@ -52,22 +52,22 @@ class Intro1 extends React.Component {
         <Row>
           <Col lg="6"> <div>
                     <h4>TRADITIONAL PROGRAMMING</h4>
-                    <img src='/images/software2p03.svg'></img>
+                    <img src='./images/software2p03.svg'></img>
           </div> </Col>
           <Col lg="6"> <div>
                     <h4>NEURAL NETWORK</h4>
-                     <img src='/images/software2p04.svg'></img>
+                     <img src='./images/software2p04.svg'></img>
 
           </div> </Col>
           </Row>
           <Row>
           <Col lg="6"> <div>
                     <h4>accuracy of program:</h4>
-                    <img src='/images/software2p05.svg'></img>
+                    <img src='./images/software2p05.svg'></img>
           </div> </Col>
           <Col lg="6"> <div>
                     <h4>accuracy of program:</h4>
-                     <img src='/images/software2p06.svg'></img>
+                     <img src='./images/software2p06.svg'></img>
           </div> </Col>
         </Row>
       </Container>
