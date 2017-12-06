@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import { Link } from 'react-router-dom'
+import {Container, Row, Col} from 'reactstrap';
+import {Link} from 'react-router-dom'
 import {Next, Prev} from './slides'
 
 class Intro0 extends React.Component {

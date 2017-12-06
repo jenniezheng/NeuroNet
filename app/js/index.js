@@ -5,6 +5,7 @@ import {MachineLearning0, MachineLearning1,MachineLearning2}  from './components
 import {Regularization0, Regularization1,Regularization2}  from './components/regularization';
 import {Type0, Type1,Type2,Type3,Typen1}  from './components/types';
 import {Intro0, Intro1} from './components/software2p0';
+import {Activation0,Activation1} from './components/activation'
 import Conclusion from './components/conclusion'
 import {Link, Switch, Route, HashRouter as Router } from 'react-router-dom'
 
@@ -27,7 +28,9 @@ class Application extends React.Component {
       <Route path='/Regularization2' render={() => <ChapterWrapper><Regularization2/></ChapterWrapper> }/>
       <Route path='/MachineLearning' render={() => <ChapterWrapper><MachineLearning0/></ChapterWrapper> }/>
       <Route path='/MachineLearning1' render={() => <ChapterWrapper><MachineLearning1/></ChapterWrapper> }/>
-      <Route path='/MachineLearning2' render={() => <ChapterWrapper><MachineLearning2/></ChapterWrapper> }/>
+      <Route path='/ActivationFunctions' render={() => <ChapterWrapper><Activation0/></ChapterWrapper> }/>
+      <Route path='/ActivationFunctions1' render={() => <ChapterWrapper><Activation1/></ChapterWrapper> }/>
+      <Route path='/Types' render={() => <ChapterWrapper><Typen1/></ChapterWrapper> }/>
       <Route path='/Types' render={() => <ChapterWrapper><Typen1/></ChapterWrapper> }/>
       <Route path='/Types0' render={() => <ChapterWrapper><Type0/></ChapterWrapper> }/>
       <Route path='/Types1' render={() => <ChapterWrapper><Type1/></ChapterWrapper> }/>

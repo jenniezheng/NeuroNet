@@ -37,7 +37,8 @@ const ch_machinglearning=new Chapter({
 })
 
 const ch_activation=new Chapter({
-  name:'ActivationFunctions'
+  name:'ActivationFunctions',
+  desc:'Activation Functions'
 })
 
 
@@ -62,7 +63,7 @@ const ch_credits=new Chapter({
   name:'Credits'
 })
 
-const chapters=[ch_intro,ch_machinglearning,ch_types,ch_regularization,ch_conclusion]
+const chapters=[ch_intro,ch_machinglearning,ch_types,ch_activation,ch_regularization,ch_conclusion]
 
 class NavDescription extends React.Component {
   constructor(props) {

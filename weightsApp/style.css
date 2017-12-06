@@ -1,0 +1,87 @@
+#slidecontainer {
+   width: 150px; /* Width of the outside container */
+
+   position: absolute;
+   left: 460px;
+   top: 410px;
+   z-index: 1000;
+   padding: 5px;
+}
+#slidecontainer2 {
+    width: 150px; /* Width of the outside container */
+
+   position: absolute;
+   left: 460px;
+   top: 642px;
+   z-index: 1000;
+   padding: 5px;
+}
+
+#demo{
+  position: absolute;
+  top: 330px;
+  left: 526px;
+  z-index: 1000;
+  padding: 5px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#demo2{
+  position: absolute;
+  top: 560px;
+  left: 526px;
+  z-index: 1000;
+  padding: 5px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#myCanvas{
+  position: absolute;
+  top: 319px;
+  left: 713px;
+  z-index: 1000;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+     /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+}
+
+
+/* The slider handle (use webkit (Chrome, Opera, Safari, Edge) and moz (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #000000; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 20px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #000000; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+#loss{
+  position: absolute;
+width: 100px;
+height: 29px;
+left: 610px;
+top: 310.87px;
+
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 24px;
+}
