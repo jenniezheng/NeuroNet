@@ -34060,7 +34060,7 @@
 	  _createClass(Activation1, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', null, _react2.default.createElement(_slides.Prev, { name: 'ActivationFunctions' }), _react2.default.createElement('iframe', { width: '300%', height: '1000px', src: './weightsApp/index.html' }));
+	      return _react2.default.createElement('div', null, _react2.default.createElement(_slides.Prev, { name: 'ActivationFunctions' }), _react2.default.createElement('iframe', { width: '300%', height: '850px', src: './weightsApp/index.html' }));
 	    }
 	  }]);
 
