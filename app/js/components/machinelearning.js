@@ -6,8 +6,8 @@ class MachineLearning0 extends React.Component {
     return (
         <div className='machinelearning'>
         <Next name='MachineLearning1'/>
-             <h1> Machine Learning</h1>
-             <p>The alternative name for software2.0 is machine learning.
+             <h1> Machine Learning </h1>
+             <p>Software 2.0 is better known as machine learning.
              The term refers to how the machine seems to incrementally improve by learning.
              There's two types of machine learning, supervised and unsupervised.</p>
             </div>
@@ -74,7 +74,7 @@ class MachineLearning2 extends React.Component {
         //TODO...
         //HTML and CSS explanation about machine learning
         <div className='machinelearning'>
-        <Prev name='MachineLearning'/>
+        <Prev name='MachineLearning0'/>
 <h1> Unsupervised Machine Learning</h1>
 <p>
 In unsupervised machine learning, the program is given a set of input data with no solutions or labels. The program must make conclusions about the style and distribution of the data based on the data's structure.
