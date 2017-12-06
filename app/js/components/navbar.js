@@ -63,7 +63,7 @@ const ch_credits=new Chapter({
   name:'Credits'
 })
 
-const chapters=[ch_intro,ch_machinglearning,ch_types,ch_activation,ch_regularization,ch_conclusion]
+const chapters=[ch_intro,ch_machinglearning,ch_types,ch_activation,ch_regularization,ch_conclusion,ch_credits]
 
 class NavDescription extends React.Component {
   constructor(props) {

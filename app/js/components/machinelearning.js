@@ -22,7 +22,7 @@ class MachineLearning1 extends React.Component {
         //TODO...
         //HTML and CSS explanation about machine learning
         <div className='machinelearning'>
-        <Prev name='MachineLearning0'/>
+        <Prev name='MachineLearning'/>
         <Next name='MachineLearning2'/>
 
           <h1> Supervised Machine Learning</h1>
@@ -74,7 +74,7 @@ class MachineLearning2 extends React.Component {
         //TODO...
         //HTML and CSS explanation about machine learning
         <div className='machinelearning'>
-        <Prev name='MachineLearning0'/>
+        <Prev name='MachineLearning1'/>
 <h1> Unsupervised Machine Learning</h1>
 <p>
 In unsupervised machine learning, the program is given a set of input data with no solutions or labels. The program must make conclusions about the style and distribution of the data based on the data's structure.

@@ -45,7 +45,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	module.exports = __webpack_require__(248);
+	module.exports = __webpack_require__(249);
 
 
 /***/ }),
@@ -93,6 +93,10 @@
 	var _conclusion2 = _interopRequireDefault(_conclusion);
 
 	var _reactRouterDom = __webpack_require__(186);
+
+	var _credits = __webpack_require__(248);
+
+	var _credits2 = _interopRequireDefault(_credits);
 
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
@@ -159,6 +163,8 @@
 	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_machinelearning.MachineLearning0, null));
 	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/MachineLearning1', render: function render() {
 	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_machinelearning.MachineLearning1, null));
+	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/MachineLearning2', render: function render() {
+	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_machinelearning.MachineLearning2, null));
 	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/ActivationFunctions', render: function render() {
 	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_activation.Activation0, null));
 	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/ActivationFunctions1', render: function render() {
@@ -179,6 +185,8 @@
 	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_software2p.Intro0, null));
 	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/Intro1', render: function render() {
 	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_software2p.Intro1, null));
+	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/Credits', render: function render() {
+	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_credits2.default, null));
 	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/Conclusion', render: function render() {
 	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_conclusion2.default, null));
 	        } }));
@@ -22109,7 +22117,7 @@
 	  name: 'Credits'
 	});
 
-	var chapters = [ch_intro, ch_machinglearning, ch_types, ch_activation, ch_regularization, ch_conclusion];
+	var chapters = [ch_intro, ch_machinglearning, ch_types, ch_activation, ch_regularization, ch_conclusion, ch_credits];
 
 	var NavDescription = function (_React$Component) {
 	  _inherits(NavDescription, _React$Component);
@@ -33480,7 +33488,7 @@
 	    _createClass(MachineLearning0, [{
 	        key: 'render',
 	        value: function render() {
-	            return _react2.default.createElement('div', { className: 'machinelearning' }, _react2.default.createElement(_slides.Next, { name: 'MachineLearning1' }), _react2.default.createElement('h1', null, ' Machine Learning'), _react2.default.createElement('p', null, 'The alternative name for software2.0 is machine learning. The term refers to how the machine seems to incrementally improve by learning. There\'s two types of machine learning, supervised and unsupervised.'));
+	            return _react2.default.createElement('div', { className: 'machinelearning' }, _react2.default.createElement(_slides.Next, { name: 'MachineLearning1' }), _react2.default.createElement('h1', null, ' Machine Learning '), _react2.default.createElement('p', null, 'Software 2.0 is better known as machine learning. The term refers to how the machine seems to incrementally improve by learning. There\'s two types of machine learning, supervised and unsupervised.'));
 	        }
 	    }]);
 
@@ -33503,7 +33511,7 @@
 
 	                //TODO...
 	                //HTML and CSS explanation about machine learning
-	                _react2.default.createElement('div', { className: 'machinelearning' }, _react2.default.createElement(_slides.Prev, { name: 'MachineLearning0' }), _react2.default.createElement(_slides.Next, { name: 'MachineLearning2' }), _react2.default.createElement('h1', null, ' Supervised Machine Learning'), _react2.default.createElement('p', null, 'Most of the machine learning applications are implemented through supervised machine learning applications.'), _react2.default.createElement('p', null, 'In supervised machine learning, the program is given a data set of queries and the correct answer for those queries. The machine\'s goal is to find the right function to map the queries (X) to the answers (Y). This type of machine learning is called supervised, because the machine is given a \'superviser\' in the form of a training set with correct answers.'), _react2.default.createElement('p', null, _react2.default.createElement('h3', { className: 'text-center' }, ' Y = f(X)')), _react2.default.createElement('h3', null, 'Two types of Supervised Learning:'), _react2.default.createElement('ol', null, _react2.default.createElement('li', null, 'Classification \u2013 When the output variable is a category like "cat" or "not cat", "happy" or "sad".'), _react2.default.createElement('li', null, 'Regression \u2013 When the output is a real value like "cost" or "weight".')), _react2.default.createElement('h3', null, 'Examples of Supervised Learning:'), _react2.default.createElement('ol', null, _react2.default.createElement('li', null, 'Support vector machines for classification problems.'), _react2.default.createElement('li', null, 'Linear regression for regression problems.')))
+	                _react2.default.createElement('div', { className: 'machinelearning' }, _react2.default.createElement(_slides.Prev, { name: 'MachineLearning' }), _react2.default.createElement(_slides.Next, { name: 'MachineLearning2' }), _react2.default.createElement('h1', null, ' Supervised Machine Learning'), _react2.default.createElement('p', null, 'Most of the machine learning applications are implemented through supervised machine learning applications.'), _react2.default.createElement('p', null, 'In supervised machine learning, the program is given a data set of queries and the correct answer for those queries. The machine\'s goal is to find the right function to map the queries (X) to the answers (Y). This type of machine learning is called supervised, because the machine is given a \'superviser\' in the form of a training set with correct answers.'), _react2.default.createElement('p', null, _react2.default.createElement('h3', { className: 'text-center' }, ' Y = f(X)')), _react2.default.createElement('h3', null, 'Two types of Supervised Learning:'), _react2.default.createElement('ol', null, _react2.default.createElement('li', null, 'Classification \u2013 When the output variable is a category like "cat" or "not cat", "happy" or "sad".'), _react2.default.createElement('li', null, 'Regression \u2013 When the output is a real value like "cost" or "weight".')), _react2.default.createElement('h3', null, 'Examples of Supervised Learning:'), _react2.default.createElement('ol', null, _react2.default.createElement('li', null, 'Support vector machines for classification problems.'), _react2.default.createElement('li', null, 'Linear regression for regression problems.')))
 	            );
 	        }
 	    }]);
@@ -33527,7 +33535,7 @@
 
 	                //TODO...
 	                //HTML and CSS explanation about machine learning
-	                _react2.default.createElement('div', { className: 'machinelearning' }, _react2.default.createElement(_slides.Prev, { name: 'MachineLearning' }), _react2.default.createElement('h1', null, ' Unsupervised Machine Learning'), _react2.default.createElement('p', null, 'In unsupervised machine learning, the program is given a set of input data with no solutions or labels. The program must make conclusions about the style and distribution of the data based on the data\'s structure.'), _react2.default.createElement('p', null, 'This type of machine learning is unsupervised since no training set is provided. The program is left alone to find the patterns and features of the data.'), _react2.default.createElement('h3', null, 'Examples of Unsupervised Learning:'), _react2.default.createElement('ol', null, _react2.default.createElement('li', null, 'Clustering'), _react2.default.createElement('li', null, 'Anomaly Detection'), _react2.default.createElement('li', null, 'Autoencoders')))
+	                _react2.default.createElement('div', { className: 'machinelearning' }, _react2.default.createElement(_slides.Prev, { name: 'MachineLearning1' }), _react2.default.createElement('h1', null, ' Unsupervised Machine Learning'), _react2.default.createElement('p', null, 'In unsupervised machine learning, the program is given a set of input data with no solutions or labels. The program must make conclusions about the style and distribution of the data based on the data\'s structure.'), _react2.default.createElement('p', null, 'This type of machine learning is unsupervised since no training set is provided. The program is left alone to find the patterns and features of the data.'), _react2.default.createElement('h3', null, 'Examples of Unsupervised Learning:'), _react2.default.createElement('ol', null, _react2.default.createElement('li', null, 'Clustering'), _react2.default.createElement('li', null, 'Anomaly Detection'), _react2.default.createElement('li', null, 'Autoencoders')))
 	            );
 	        }
 	    }]);
@@ -33952,7 +33960,7 @@
 	  _createClass(Intro0, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', { className: 'software2p0' }, _react2.default.createElement('div', null, _react2.default.createElement('p', null, 'A ', _react2.default.createElement('span', { className: 'font-weight-bold' }, ' neural network'), ' is a collection of computer programmed \u201Cneurons\u201D that work together to produce a result. Neural networks represent a new programming paradigm, coined Software 2.0 by AI researcher Andrej Karpathy.', _react2.default.createElement('br', null), 'Traditional programming \u201CSoftware 1.0\u201D involves a programmer writing a program to try to reach a result. Meanwhile, \u201CSoftware 2.0\u201D involes a programmer letting the program design itself to reach a result.')), _react2.default.createElement(_reactstrap.Container, { className: 'software2p0_caption' }, _react2.default.createElement(_reactstrap.Row, null, _react2.default.createElement(_reactstrap.Col, { lg: '6' }, ' ', _react2.default.createElement('div', null, _react2.default.createElement('h4', null, 'TRADITIONAL PROGRAMMING'), _react2.default.createElement('img', { src: './images/software2p01.svg' })), ' '), _react2.default.createElement(_reactstrap.Col, { lg: '6' }, ' ', _react2.default.createElement('div', null, _react2.default.createElement('h4', null, 'NEURAL NETWORK'), _react2.default.createElement('img', { src: './images/software2p02.svg' })), ' '))), _react2.default.createElement(_slides.Next, { name: 'Intro1' }));
+	      return _react2.default.createElement('div', { className: 'software2p0' }, _react2.default.createElement('div', null, _react2.default.createElement('p', null, 'A ', _react2.default.createElement('span', { className: 'font-weight-bold' }, ' neural network'), ' is a collection of computer programmed \u201Cneurons\u201D that work together to produce a result. Neural networks represent a new programming paradigm, coined Software 2.0 by AI researcher Andrej Karpathy.', _react2.default.createElement('br', null), 'Traditional programming \u201CSoftware 1.0\u201D involves a programmer writing a program to try to reach a result. Meanwhile, \u201CSoftware 2.0\u201D involves a programmer letting the program design itself to reach a result.')), _react2.default.createElement(_reactstrap.Container, { className: 'software2p0_caption' }, _react2.default.createElement(_reactstrap.Row, null, _react2.default.createElement(_reactstrap.Col, { lg: '6' }, ' ', _react2.default.createElement('div', null, _react2.default.createElement('h4', null, 'TRADITIONAL PROGRAMMING'), _react2.default.createElement('img', { src: './images/software2p01.svg' })), ' '), _react2.default.createElement(_reactstrap.Col, { lg: '6' }, ' ', _react2.default.createElement('div', null, _react2.default.createElement('h4', null, 'NEURAL NETWORK'), _react2.default.createElement('img', { src: './images/software2p02.svg' })), ' '))), _react2.default.createElement(_slides.Next, { name: 'Intro1' }));
 	    }
 	  }]);
 
@@ -34145,10 +34153,79 @@
 /* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+	    }
+	  }return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+	  };
+	}();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	var Credits = function (_React$Component) {
+	  _inherits(Credits, _React$Component);
+
+	  function Credits() {
+	    _classCallCheck(this, Credits);
+
+	    return _possibleConstructorReturn(this, (Credits.__proto__ || Object.getPrototypeOf(Credits)).apply(this, arguments));
+	  }
+
+	  _createClass(Credits, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement('div', { id: 'credits' }, _react2.default.createElement('center', null, _react2.default.createElement('h1', null, 'Web Development'), _react2.default.createElement('p', null, ' Jennie Zheng'), _react2.default.createElement('h1', null, 'Design + Writing'), _react2.default.createElement('p', null, 'Hakan Alpay', _react2.default.createElement('br', null), 'Jennie Zheng', _react2.default.createElement('br', null), 'Rishan Girish'), _react2.default.createElement('h1', null, 'Interactivity'), _react2.default.createElement('p', null, ' Hakan Alpay', _react2.default.createElement('br', null), 'Caleb Chau'), _react2.default.createElement('h1', null, 'Beta Testing'), _react2.default.createElement('p', null, '  Misheel Bayartsengel', _react2.default.createElement('br', null), 'Haoyu Yun'), _react2.default.createElement('h1', null, 'Other'), _react2.default.createElement('p', null, 'Jayant Mehra', _react2.default.createElement('br', null), 'Divij Ohri', _react2.default.createElement('br', null), 'Samar Seth', _react2.default.createElement('br', null), 'Tanya Lohia', _react2.default.createElement('br', null), 'Jade Bisht', _react2.default.createElement('br', null), 'Shirley Shi', _react2.default.createElement('br', null), 'Hirday Gupta')));
+	    }
+	  }]);
+
+	  return Credits;
+	}(_react2.default.Component);
+
+	exports.default = Credits;
+
+/***/ }),
+/* 249 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(249);
+	var content = __webpack_require__(250);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -34156,7 +34233,7 @@
 	var options = {"hmr":true}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(252)(content, options);
+	var update = __webpack_require__(253)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -34173,21 +34250,21 @@
 	}
 
 /***/ }),
-/* 249 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(250)(undefined);
+	exports = module.exports = __webpack_require__(251)(undefined);
 	// imports
 
 
 	// module
-	exports.push([module.id, "/*for vars*/\nhtml, body {\n  height: 100%; }\n\nbody {\n  background: #fff;\n  background-image: url(" + __webpack_require__(251) + ");\n  background-size: 100% 100%; }\n\n.fa {\n  font-size: 2.2em;\n  color: white; }\n\niframe {\n  -moz-transform: scale(0.8, 0.8);\n  -webkit-transform: scale(0.8, 0.8);\n  -o-transform: scale(0.8, 0.8);\n  -ms-transform: scale(0.8, 0.8);\n  transform: scale(0.8, 0.8);\n  -moz-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  transform-origin: top left;\n  border: none; }\n\n@media screen and (max-width: 900px) {\n  iframe {\n    -moz-transform: scale(0.6, 0.6);\n    -webkit-transform: scale(0.6, 0.6);\n    -o-transform: scale(0.6, 0.6);\n    -ms-transform: scale(0.6, 0.6);\n    transform: scale(0.6, 0.6); } }\n\n@media screen and (max-width: 700px) {\n  iframe {\n    -moz-transform: scale(0.4, 0.4);\n    -webkit-transform: scale(0.4, 0.4);\n    -o-transform: scale(0.4, 0.4);\n    -ms-transform: scale(0.4, 0.4);\n    transform: scale(0.4, 0.4); } }\n\n.fa-github-alt {\n  padding-left: 3em; }\n\n.nav-link {\n  padding: .3em; }\n\n.next, .prev {\n  position: fixed;\n  bottom: 3em; }\n  .next i, .prev i {\n    color: grey !important;\n    font-size: 3em; }\n\n.next {\n  right: 3em; }\n\n.prev {\n  left: 3em; }\n\n#mynavbar {\n  color: white;\n  padding: .5em;\n  background-color: grey;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.mytip {\n  margin-top: .3em;\n  outline: 1px solid white;\n  padding: .4em;\n  font-size: 1.5em;\n  background-color: #00AAFF; }\n\n.chapterwrapper {\n  color: grey;\n  padding: 3em;\n  text-align: left;\n  margin: auto;\n  max-width: 1000px; }\n  .chapterwrapper p {\n    font-size: 1.5em; }\n  .chapterwrapper ol {\n    font-size: 1.5em; }\n\n.left {\n  text-align: left; }\n\n#credits h1 {\n  margin-top: .5em; }\n\n#credits h3 {\n  margin: .3em; }\n\n.software2p0_caption h4 {\n  padding-top: 2em; }\n\n.type img {\n  display: flex;\n  align-items: flex-start;\n  margin: auto;\n  width: 40%;\n  min-width: 300px; }\n\n.firstType img {\n  width: 100%; }\n", ""]);
+	exports.push([module.id, "/*for vars*/\nhtml, body {\n  height: 100%; }\n\nbody {\n  background: #fff;\n  background-image: url(" + __webpack_require__(252) + ");\n  background-size: 100% 100%; }\n\n.fa {\n  font-size: 2.2em;\n  color: white; }\n\niframe {\n  -moz-transform: scale(0.8, 0.8);\n  -webkit-transform: scale(0.8, 0.8);\n  -o-transform: scale(0.8, 0.8);\n  -ms-transform: scale(0.8, 0.8);\n  transform: scale(0.8, 0.8);\n  -moz-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  transform-origin: top left;\n  border: none; }\n\n@media screen and (max-width: 900px) {\n  iframe {\n    -moz-transform: scale(0.6, 0.6);\n    -webkit-transform: scale(0.6, 0.6);\n    -o-transform: scale(0.6, 0.6);\n    -ms-transform: scale(0.6, 0.6);\n    transform: scale(0.6, 0.6); } }\n\n@media screen and (max-width: 700px) {\n  iframe {\n    -moz-transform: scale(0.4, 0.4);\n    -webkit-transform: scale(0.4, 0.4);\n    -o-transform: scale(0.4, 0.4);\n    -ms-transform: scale(0.4, 0.4);\n    transform: scale(0.4, 0.4); } }\n\n.fa-github-alt {\n  padding-left: 3em; }\n\n.nav-link {\n  padding: .3em; }\n\n.next, .prev {\n  position: fixed;\n  bottom: 3em; }\n  .next i, .prev i {\n    color: grey !important;\n    font-size: 3em; }\n\n.next {\n  right: 3em; }\n\n.prev {\n  left: 3em; }\n\n#mynavbar {\n  color: white;\n  padding: .5em;\n  background-color: grey;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.mytip {\n  margin-top: .3em;\n  outline: 1px solid white;\n  padding: .4em;\n  font-size: 1.5em;\n  background-color: #00AAFF; }\n\n.chapterwrapper {\n  color: grey;\n  padding: 3em;\n  text-align: left;\n  margin: auto;\n  max-width: 1000px; }\n  .chapterwrapper p {\n    font-size: 1.5em; }\n  .chapterwrapper ol {\n    font-size: 1.5em; }\n\n.left {\n  text-align: left; }\n\n#credits h1 {\n  margin-top: .5em; }\n\n#credits h3 {\n  margin: .3em; }\n\n.software2p0_caption h4 {\n  padding-top: 2em; }\n\n.type img {\n  display: flex;\n  align-items: flex-start;\n  margin: auto;\n  width: 40%;\n  min-width: 300px; }\n\n.firstType img {\n  width: 100%; }\n", ""]);
 
 	// exports
 
 
 /***/ }),
-/* 250 */
+/* 251 */
 /***/ (function(module, exports) {
 
 	/*
@@ -34269,13 +34346,13 @@
 
 
 /***/ }),
-/* 251 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "2425ecdc8a4ed084a6b76491300ba42a.png";
 
 /***/ }),
-/* 252 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -34331,7 +34408,7 @@
 	var	singletonCounter = 0;
 	var	stylesInsertedAtTop = [];
 
-	var	fixUrls = __webpack_require__(253);
+	var	fixUrls = __webpack_require__(254);
 
 	module.exports = function(list, options) {
 		if (false) {
@@ -34647,7 +34724,7 @@
 
 
 /***/ }),
-/* 253 */
+/* 254 */
 /***/ (function(module, exports) {
 
 	

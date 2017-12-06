@@ -8,7 +8,7 @@ import {Intro0, Intro1} from './components/software2p0';
 import {Activation0,Activation1} from './components/activation'
 import Conclusion from './components/conclusion'
 import {Link, Switch, Route, HashRouter as Router } from 'react-router-dom'
-
+import Credits from './components/credits'
 class ChapterWrapper extends React.Component {
   render(){
     return (
@@ -28,6 +28,7 @@ class Application extends React.Component {
       <Route path='/Regularization2' render={() => <ChapterWrapper><Regularization2/></ChapterWrapper> }/>
       <Route path='/MachineLearning' render={() => <ChapterWrapper><MachineLearning0/></ChapterWrapper> }/>
       <Route path='/MachineLearning1' render={() => <ChapterWrapper><MachineLearning1/></ChapterWrapper> }/>
+      <Route path='/MachineLearning2' render={() => <ChapterWrapper><MachineLearning2/></ChapterWrapper> }/>
       <Route path='/ActivationFunctions' render={() => <ChapterWrapper><Activation0/></ChapterWrapper> }/>
       <Route path='/ActivationFunctions1' render={() => <ChapterWrapper><Activation1/></ChapterWrapper> }/>
       <Route path='/Types' render={() => <ChapterWrapper><Typen1/></ChapterWrapper> }/>
@@ -38,6 +39,7 @@ class Application extends React.Component {
       <Route path='/Types3' render={() => <ChapterWrapper><Type3/></ChapterWrapper> }/>
       <Route path='/Intro' render={() => <ChapterWrapper><Intro0/></ChapterWrapper> }/>
       <Route path='/Intro1' render={() => <ChapterWrapper><Intro1/></ChapterWrapper> }/>
+      <Route path='/Credits' render={() => <ChapterWrapper><Credits/></ChapterWrapper> }/>
       <Route path='/Conclusion' render={() => <ChapterWrapper><Conclusion/></ChapterWrapper> }/>
        </Switch>
   }
