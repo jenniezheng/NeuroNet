@@ -45,7 +45,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	module.exports = __webpack_require__(247);
+	module.exports = __webpack_require__(248);
 
 
 /***/ }),
@@ -86,7 +86,9 @@
 
 	var _software2p = __webpack_require__(245);
 
-	var _conclusion = __webpack_require__(246);
+	var _activation = __webpack_require__(246);
+
+	var _conclusion = __webpack_require__(247);
 
 	var _conclusion2 = _interopRequireDefault(_conclusion);
 
@@ -157,8 +159,12 @@
 	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_machinelearning.MachineLearning0, null));
 	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/MachineLearning1', render: function render() {
 	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_machinelearning.MachineLearning1, null));
-	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/MachineLearning2', render: function render() {
-	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_machinelearning.MachineLearning2, null));
+	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/ActivationFunctions', render: function render() {
+	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_activation.Activation0, null));
+	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/ActivationFunctions1', render: function render() {
+	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_activation.Activation1, null));
+	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/Types', render: function render() {
+	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_types.Typen1, null));
 	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/Types', render: function render() {
 	          return _react2.default.createElement(ChapterWrapper, null, _react2.default.createElement(_types.Typen1, null));
 	        } }), _react2.default.createElement(_reactRouterDom.Route, { path: '/Types0', render: function render() {
@@ -22078,7 +22084,8 @@
 	});
 
 	var ch_activation = new Chapter({
-	  name: 'ActivationFunctions'
+	  name: 'ActivationFunctions',
+	  desc: 'Activation Functions'
 	});
 
 	var ch_regularization = new Chapter({
@@ -22102,7 +22109,7 @@
 	  name: 'Credits'
 	});
 
-	var chapters = [ch_intro, ch_machinglearning, ch_types, ch_regularization, ch_conclusion];
+	var chapters = [ch_intro, ch_machinglearning, ch_types, ch_activation, ch_regularization, ch_conclusion];
 
 	var NavDescription = function (_React$Component) {
 	  _inherits(NavDescription, _React$Component);
@@ -33984,6 +33991,95 @@
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
+	var _createClass = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+	    }
+	  }return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+	  };
+	}();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _slides = __webpack_require__(242);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === 'undefined' ? 'undefined' : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === 'undefined' ? 'undefined' : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	var Activation0 = function (_React$Component) {
+	  _inherits(Activation0, _React$Component);
+
+	  function Activation0() {
+	    _classCallCheck(this, Activation0);
+
+	    return _possibleConstructorReturn(this, (Activation0.__proto__ || Object.getPrototypeOf(Activation0)).apply(this, arguments));
+	  }
+
+	  _createClass(Activation0, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement('div', null, _react2.default.createElement('h1', null, 'Activation'), _react2.default.createElement(_slides.Next, { name: 'ActivationFunctions1' }), _react2.default.createElement('p', null, ' The activation function defines how a neuron should respond when given a group of inputs and weights.'), _react2.default.createElement('center', null, _react2.default.createElement('p', null, 'Z = bias + weight1*x1 + weight2*x2 + weight3*x3 '), _react2.default.createElement('p', null, 'Activation = function(Z) ')), _react2.default.createElement('p', null, ' Next is a graphical representation of activation functions. Your job is to change the weight of inputs X and Y in order to correctly place all the data points.'));
+	    }
+	  }]);
+
+	  return Activation0;
+	}(_react2.default.Component);
+
+	var Activation1 = function (_React$Component2) {
+	  _inherits(Activation1, _React$Component2);
+
+	  function Activation1() {
+	    _classCallCheck(this, Activation1);
+
+	    return _possibleConstructorReturn(this, (Activation1.__proto__ || Object.getPrototypeOf(Activation1)).apply(this, arguments));
+	  }
+
+	  _createClass(Activation1, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement('div', null, _react2.default.createElement(_slides.Prev, { name: 'ActivationFunctions' }), _react2.default.createElement('iframe', { width: '300%', height: '1000px', src: './weightsApp/index.html' }));
+	    }
+	  }]);
+
+	  return Activation1;
+	}(_react2.default.Component);
+
+	module.exports = {
+	  Activation0: Activation0,
+	  Activation1: Activation1
+	};
+
+/***/ }),
+/* 247 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -34046,13 +34142,13 @@
 	exports.default = Conclusion;
 
 /***/ }),
-/* 247 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(248);
+	var content = __webpack_require__(249);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -34060,7 +34156,7 @@
 	var options = {"hmr":true}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(251)(content, options);
+	var update = __webpack_require__(252)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -34077,21 +34173,21 @@
 	}
 
 /***/ }),
-/* 248 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(249)(undefined);
+	exports = module.exports = __webpack_require__(250)(undefined);
 	// imports
 
 
 	// module
-	exports.push([module.id, "/*for vars*/\nhtml, body {\n  height: 100%; }\n\nbody {\n  background: #fff;\n  background-image: url(" + __webpack_require__(250) + ");\n  background-size: 100% 100%; }\n\n.fa {\n  font-size: 2.2em;\n  color: white; }\n\n.fa-github-alt {\n  padding-left: 3em; }\n\n.nav-link {\n  padding: .3em; }\n\n.next, .prev {\n  position: fixed;\n  bottom: 3em; }\n  .next i, .prev i {\n    color: grey !important;\n    font-size: 3em; }\n\n.next {\n  right: 3em; }\n\n.prev {\n  left: 3em; }\n\n#mynavbar {\n  color: white;\n  padding: .5em;\n  background-color: grey;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.mytip {\n  margin-top: .3em;\n  outline: 1px solid white;\n  padding: .4em;\n  font-size: 1.5em;\n  background-color: #00AAFF; }\n\n.chapterwrapper {\n  color: grey;\n  padding: 3em;\n  text-align: left;\n  margin: auto;\n  max-width: 1000px; }\n  .chapterwrapper p {\n    font-size: 1.5em; }\n  .chapterwrapper ol {\n    font-size: 1.5em; }\n\n.left {\n  text-align: left; }\n\n#credits h1 {\n  margin-top: .5em; }\n\n#credits h3 {\n  margin: .3em; }\n\n.software2p0_caption h4 {\n  padding-top: 2em; }\n\n.type img {\n  display: flex;\n  align-items: flex-start;\n  margin: auto;\n  width: 40%;\n  min-width: 300px; }\n\n.firstType img {\n  width: 100%; }\n", ""]);
+	exports.push([module.id, "/*for vars*/\nhtml, body {\n  height: 100%; }\n\nbody {\n  background: #fff;\n  background-image: url(" + __webpack_require__(251) + ");\n  background-size: 100% 100%; }\n\n.fa {\n  font-size: 2.2em;\n  color: white; }\n\niframe {\n  -moz-transform: scale(0.8, 0.8);\n  -webkit-transform: scale(0.8, 0.8);\n  -o-transform: scale(0.8, 0.8);\n  -ms-transform: scale(0.8, 0.8);\n  transform: scale(0.8, 0.8);\n  -moz-transform-origin: top left;\n  -webkit-transform-origin: top left;\n  -o-transform-origin: top left;\n  -ms-transform-origin: top left;\n  transform-origin: top left;\n  border: none; }\n\n@media screen and (max-width: 900px) {\n  iframe {\n    -moz-transform: scale(0.6, 0.6);\n    -webkit-transform: scale(0.6, 0.6);\n    -o-transform: scale(0.6, 0.6);\n    -ms-transform: scale(0.6, 0.6);\n    transform: scale(0.6, 0.6); } }\n\n@media screen and (max-width: 700px) {\n  iframe {\n    -moz-transform: scale(0.4, 0.4);\n    -webkit-transform: scale(0.4, 0.4);\n    -o-transform: scale(0.4, 0.4);\n    -ms-transform: scale(0.4, 0.4);\n    transform: scale(0.4, 0.4); } }\n\n.fa-github-alt {\n  padding-left: 3em; }\n\n.nav-link {\n  padding: .3em; }\n\n.next, .prev {\n  position: fixed;\n  bottom: 3em; }\n  .next i, .prev i {\n    color: grey !important;\n    font-size: 3em; }\n\n.next {\n  right: 3em; }\n\n.prev {\n  left: 3em; }\n\n#mynavbar {\n  color: white;\n  padding: .5em;\n  background-color: grey;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.mytip {\n  margin-top: .3em;\n  outline: 1px solid white;\n  padding: .4em;\n  font-size: 1.5em;\n  background-color: #00AAFF; }\n\n.chapterwrapper {\n  color: grey;\n  padding: 3em;\n  text-align: left;\n  margin: auto;\n  max-width: 1000px; }\n  .chapterwrapper p {\n    font-size: 1.5em; }\n  .chapterwrapper ol {\n    font-size: 1.5em; }\n\n.left {\n  text-align: left; }\n\n#credits h1 {\n  margin-top: .5em; }\n\n#credits h3 {\n  margin: .3em; }\n\n.software2p0_caption h4 {\n  padding-top: 2em; }\n\n.type img {\n  display: flex;\n  align-items: flex-start;\n  margin: auto;\n  width: 40%;\n  min-width: 300px; }\n\n.firstType img {\n  width: 100%; }\n", ""]);
 
 	// exports
 
 
 /***/ }),
-/* 249 */
+/* 250 */
 /***/ (function(module, exports) {
 
 	/*
@@ -34173,13 +34269,13 @@
 
 
 /***/ }),
-/* 250 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "2425ecdc8a4ed084a6b76491300ba42a.png";
 
 /***/ }),
-/* 251 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -34235,7 +34331,7 @@
 	var	singletonCounter = 0;
 	var	stylesInsertedAtTop = [];
 
-	var	fixUrls = __webpack_require__(252);
+	var	fixUrls = __webpack_require__(253);
 
 	module.exports = function(list, options) {
 		if (false) {
@@ -34551,7 +34647,7 @@
 
 
 /***/ }),
-/* 252 */
+/* 253 */
 /***/ (function(module, exports) {
 
 	
