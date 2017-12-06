@@ -22,7 +22,7 @@ class Activation1 extends React.Component {
     return (
         <div>
         <Prev name='ActivationFunctions'/>
-         <iframe width='300%' height='1000px' src="./weightsApp/index.html"></iframe>
+         <iframe width='300%' height='850px' src="./weightsApp/index.html"></iframe>
         </div>
     );
   }
